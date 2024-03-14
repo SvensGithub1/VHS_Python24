@@ -1,13 +1,13 @@
-- Begrüßung
-- Worum geht es was wird vermittelt
-- Was zu mir
-- Was zu euch
-- Generelle Struktur
-- Generelles zu Programmier sprachen
-- Genenerelles zu python 
-	- Warum python
-- Zusätzlich wird geliefert Installation
-- Einstieg in Programmumgebung (IDE) Konsole etc.
+ Begrüßung 
+Worum geht es was wird vermittelt
+Was zu mir
+Was zu euch
+Generelle Struktur
+Generelles zu Programmier sprachen
+Genenerelles zu python 
+	 Warum python
+ Zusätzlich wird geliefert Installation
+Einstieg in Programmumgebung (IDE) Konsole etc.
 - Github
 - Hello World Programm
 - Datenstrukturen
