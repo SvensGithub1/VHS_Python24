@@ -2,7 +2,7 @@
 """
 Created on Fri Jan  5 10:45:47 2024
 
-@author: Svenson
+@author: Sven
 """
 
 def fibonacci(n):
@@ -13,9 +13,10 @@ def fibonacci(n):
         fib_sequence.append(next_number)
 
     return fib_sequence
-
-# Beispiel: Die ersten 10 Zahlen der Fibonacci-Folge
-n = 10
-result = fibonacci(n)
-
-print(f"Die ersten {n} Zahlen der Fibonacci-Folge sind: {result}")
+if __name__ == "__main__":
+     # execute only if run as a script
+     # Beispiel: Die ersten 10 Zahlen der Fibonacci-Folge
+     n = 10
+     result = fibonacci(n)
+    
+     print(f"Die ersten {n} Zahlen der Fibonacci-Folge sind: {result}")

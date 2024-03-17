@@ -8,3 +8,5 @@ user_name = input("Enter your name: ")
 
 # Greet the user
 print("Hello, " + user_name + "! Nice to meet you.")
+
+#%% Debugging
