@@ -1,3 +1,5 @@
+
+
 def caesar_encrypt(plaintext, shift):
     ciphertext = ""
     for char in plaintext:
