@@ -4,9 +4,18 @@ Created on Sun Apr  7 15:00:51 2024
 
 @author: Sven
 """
+
 import logging
 debug = logging.basicConfig(level=logging.INFO)
-class Dog:
+class Tier:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} macht ein Geräusch.")
+
+
+class Dog(Tier):
 
     def __init__(self, name):
         logging.debug('initialised') 

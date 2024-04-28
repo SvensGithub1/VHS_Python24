@@ -28,8 +28,25 @@ def main():
         file.write(encrypted_text)
     print("Verschlüsselter Text wurde in 'encrypted_text.txt' gespeichert.")
 
+class TestCaesarEncoder(unittest.TestCase):
+    def test_encode_with_positive_shift(self):
+        self.assertEqual(caesar_encrypt("Hello, World!", 3), "Khoor, Zruog!")
+
+    def test_encode_with_negative_shift(self):
+        self.assertEqual(caesar_encrypt("Hello, World!", -3), "Ebiil, Tloia!")
+
+    def test_encode_with_zero_shift(self):
+        self.assertEqual(caesar_encrypt("Hello, World!", 0), "Hello, World!")
+
+    def test_encode_with_large_shift(self):
+        self.assertEqual(caesar_encrypt("Hello, World!", 27), "Ifmmp, Xpsme!")
+
+    def test_encode_with_non_alpha_characters(self):
+        self.assertEqual(caesar_encrypt("Hello, World! 123", 3), "Khoor, Zruog! 123")
+
 
 if __name__ == "__main__":
-    main()
-    
+    #main()
+    unittest.main()
+    assert caesar_encrypt("Hello, World!", 3) == "Khoor, Zruog!"
     

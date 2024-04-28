@@ -5,7 +5,7 @@ Created on Sun Apr  7 15:00:51 2024
 @author: Sven
 """
 import logging
-debug = logging.basicConfig(level=logging.INFO)
+debug = logging.basicConfig(filename='logfile.log', level=logging.INFO)
 class Dog:
 
     def __init__(self, name):
