@@ -11,7 +11,8 @@ class MazeEnv(gym.Env):
         super(MazeEnv, self).__init__()
         self.grid_size = 10
         self.action_space = spaces.Discrete(4)  # 4 mögliche Aktionen: 0: hoch, 1: rechts, 2: runter, 3: links
-        self.observation_space = spaces.Box(low=0, high=3, shape=(self.grid_size, self.grid_size), dtype=np.int32)
+        self.observation_space = spaces.Box(low=0, high=3, shape=(self.grid_size
+                                                                  , self.grid_size), dtype=np.int32)
         self.maze = None
         self.agent_pos = None
         self.goal_pos = None
